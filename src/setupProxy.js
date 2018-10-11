@@ -3,5 +3,6 @@ module.exports = function(app){
 
     app.use(proxy('/api/*' , { target : 'http://localhost:5000' }))
     app.use(proxy('/images/*' , { target : 'http://localhost:5000' }))
+    app.use(proxy('/currentPost/images/*' , { target : 'http://localhost:5000' }))
 
 }
